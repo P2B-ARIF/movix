@@ -33,7 +33,7 @@ const Cast = props => {
 							return (
 								<div key={item?.id} className='listItem'>
 									<div className='profileImg'>
-										<Img src={imgUrl || Img} />
+										<Img src={imgUrl} />
 									</div>
 									<div className='name'>{item?.name}</div>
 									<div className='character'>{item?.character}</div>
