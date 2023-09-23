@@ -1,13 +1,11 @@
+import React from "react";
 import { useSelector } from "react-redux";
-
+import Img from "../../../components/lazyLoadImage/Img";
 import "./style.scss";
-
 import ContentWrapper from "../../../components/contentWrapper/ContentWrapper";
 import avatar from "../../../assets/avatar.png";
-import Img from "../../../components/lazyLoadImage/Img";
 
-const Cast = props => {
-	const { data, loading } = props;
+const Cast = ({ data, loading }) => {
 	const { url } = useSelector(state => state.home);
 
 	const skeleton = () => {
